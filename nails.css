@@ -14,12 +14,12 @@ html {
 }
 /* NAV */
 nav {
-  background: rgba(255, 220, 230, 0.9);
-   position: fixed;
+position: fixed;
   top: 0;
+  left: 0;              /* 👈 force it left */
   width: 100%;
   height: 70px;
-  padding: 0 50px;
+  padding: 0 25px;      /* 👈 reduced from 50px */
   background: rgba(255, 220, 230, 0.9);
   display: flex;
   justify-content: space-between;
@@ -29,8 +29,9 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 20px; /* 👈 was 30px */
 }
+
 nav ul li a {
   color: #333;
   font-weight: 500;
@@ -58,7 +59,7 @@ nav ul li a {
 }
 
 .content {
-  max-width: 600px;
+  margin-bottom: 15px;
 }
 
 .content h1 {
@@ -67,7 +68,7 @@ nav ul li a {
 }
 
 .content p {
-  font-size: 1.2rem;
+ margin-bottom: 25px;
 }
 
 .cta {
@@ -169,7 +170,7 @@ nav ul li a {
 
 /* ===== NAIL HEADER TRANSFORM ===== */
 .nail-header {
-  margin-top: 80px; /* pushes content below fixed nav */
+  margin-top: 120px; /* pushes content below fixed nav */
 }
 
 /* MAIN TITLE */
@@ -208,4 +209,38 @@ nav ul li a {
   background: #f6a5c0;
   border-color: #f6a5c0;
   color: #000;
+}
+
+/* ===== MOBILE NAV ===== */
+@media (max-width: 768px) {
+  nav ul {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: rgba(255, 220, 230, 0.95);
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 12px;
+    display: none;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+}
+
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
 }

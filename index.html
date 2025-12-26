@@ -10,8 +10,10 @@
  
 <header class="hero" id="Home">
 
-  <nav>
+  <nav >
     <h2 class="logo-text">Polish Plz</h2>
+    <button class="menu-btn">☰</button>
+
     <ul>
       <li><a href="#Home">Home</a></li>
       <li><a href="#About">About</a></li>
@@ -125,3 +127,8 @@
 </footer>
 
 </body>
+<script>
+  document.querySelector('.menu-btn').onclick = () => {
+    document.querySelector('nav ul').classList.toggle('show');
+  };
+</script>
