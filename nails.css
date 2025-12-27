@@ -211,6 +211,128 @@ nav ul li a {
   color: #000;
 }
 
+
+
+
+/* ===== SERVICES GRID ===== */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+/* Center text inside service cards */
+.services-grid .before-card {
+  text-align: center;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+/* ===== ABOUT SECTION ===== */
+.about {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.about p {
+  max-width: 650px;
+  margin: 25px auto 0;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+/* ===== HOURS ===== */
+.hours {
+  text-align: center;
+  padding: 90px 20px;
+}
+
+.hours-card {
+  max-width: 420px;
+  margin: 35px auto 0;
+  background: #fff;
+  padding: 30px 35px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.hours-card p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.05rem;
+  padding: 12px 0;
+  border-bottom: 1px solid #f2c9d6;
+}
+
+.hours-card p:last-child {
+  border-bottom: none;
+}
+
+.hours-card span {
+  font-weight: 500;
+}
+
+.hours-card .closed span {
+  color: #d16c8a;
+  font-weight: 600;
+}
+
+/* ===== POLICIES GRID ===== */
+.policies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* ===== CONTACT FORM CARD ===== */
+.contact-card {
+  max-width: 500px;
+  margin: 35px auto 0;
+  background: #fff;
+  padding: 35px 30px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Form inputs */
+.contact-card input,
+.contact-card textarea {
+  width: 100%;
+  padding: 14px 15px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  border: 1px solid #f2c9d6;
+  background: #fbe4ea;
+  font-size: 1rem;
+  outline: none;
+}
+
+/* Submit button */
+.contact-card button {
+  width: 100%;
+  padding: 14px 0;
+  border-radius: 50px;
+  border: none;
+  background: #d16c8a;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-card button:hover {
+  background: #f6a5c0;
+  color: #000;
+}
+
+
+
 /* ===== MOBILE NAV ===== */
 @media (max-width: 768px) {
   nav ul {
@@ -244,3 +366,4 @@ nav ul li a {
     display: block;
   }
 }
+
