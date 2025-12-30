@@ -55,7 +55,7 @@ nav ul li a {
       rgba(255, 192, 203, 0.45),
       rgba(255, 192, 203, 0.45)
     ),
-    url("Images/pfp-nails.png") center/cover no-repeat;
+    url("Images/pfp-BackgroundRe.jpg") center/cover no-repeat;
 }
 
 .content {
@@ -365,5 +365,82 @@ nav ul li a {
   .menu-btn {
     display: block;
   }
+}
+
+/* ===== BOOKING UI ===== */
+.booking {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.booking-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.08);
+  text-align: left;
+}
+
+.booking-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.booking-note {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 8px;
+}
+
+.booking-card h4 {
+  margin-bottom: 10px;
+}
+
+.booking-card label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.time-slot {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border-radius: 10px;
+  border: 1px solid #f2c9d6;
+  background: #fbe4ea;
+  cursor: pointer;
+}
+
+.time-slot.selected {
+  background: #f6a5c0;
+  border-color: #f6a5c0;
+}
+
+.inline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#deposit-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px;
+  border-radius: 50px;
+  border: none;
+  background: #d16c8a;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#deposit-btn:hover {
+  background: #f6a5c0;
+  color: #000;
 }
 
