@@ -7,12 +7,12 @@ let selectedTime = "";
 let selectedAddons = [];
 let selectedServices = [];
 
-// Service checkboxes
+// ================= SERVICE CHECKBOXES =================
 document.querySelectorAll(".service-checkbox").forEach(cb => {
   cb.addEventListener("change", updateTotal);
 });
 
-// Update total
+// ================= UPDATE TOTAL =================
 function updateTotal() {
   selectedServices = Array.from(
     document.querySelectorAll(".service-checkbox:checked")
@@ -24,25 +24,29 @@ function updateTotal() {
 
   total = basePrice + serviceTotal;
 
-  document.getElementById("serviceField").value = selectedServices.join(", ");
+  document.getElementById("serviceField").value =
+    selectedServices.join(", ");
+
   document.getElementById("addonsField").value = "None";
+
   document.getElementById("total").innerText = `$${total}`;
   document.getElementById("totalField").value = `$${total}`;
 }
 
-// Time selection
+// ================= TIME SELECTION =================
 document.querySelectorAll(".time-slot").forEach(slot => {
   slot.addEventListener("click", () => {
     document.querySelectorAll(".time-slot").forEach(s =>
       s.classList.remove("selected")
     );
+
     slot.classList.add("selected");
     selectedTime = slot.innerText;
     document.getElementById("timeField").value = selectedTime;
   });
 });
 
-// Form submit
+// ================= FORM SUBMIT =================
 document
   .getElementById("booking-form")
   .addEventListener("submit", function (e) {
@@ -55,17 +59,19 @@ document
 
     emailjs
       .sendForm(
-        "service_0v21hf5",
+        "service_hkep44n",
         "template_p6vquoh",
         this
       )
       .then(() => {
         alert("Appointment request sent 💖");
+
         this.reset();
         total = basePrice;
         selectedServices = [];
         selectedTime = "";
-        document.getElementById("total").innerText = `$0`;
+
+        document.getElementById("total").innerText = "$0";
       })
       .catch(err => {
         console.error("EmailJS error:", err);
