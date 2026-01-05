@@ -178,11 +178,20 @@
           <input type="text" name="name" placeholder="Full Name" required>
           <input type="email" name="email" placeholder="Email" required>
 
-          <label class="inline">
-            Allergic to any nail products?
-            <input type="radio" name="allergy" value="Yes" required> Yes
-            <input type="radio" name="allergy" value="No"> No
-          </label>
+          <div class="allergy-group">
+  <p class="allergy-label">Allergic to any nail products?</p>
+
+  <label class="radio-option">
+    <input type="radio" name="allergy" value="Yes" required>
+    Yes
+  </label>
+
+  <label class="radio-option">
+    <input type="radio" name="allergy" value="No">
+    No
+  </label>
+</div>
+
 
           <label class="inline">
             <input type="checkbox" required>

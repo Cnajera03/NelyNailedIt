@@ -412,3 +412,25 @@ nav ul li a {
   background: #f6a5c0;
   color: #000;
 }
+ 
+.allergy-group {
+  margin-top: 10px;
+}
+
+.allergy-label {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+.radio-option input {
+  accent-color: #d16c8a;
+}
