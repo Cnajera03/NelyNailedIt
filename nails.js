@@ -3,7 +3,6 @@ emailjs.init("DcFu_X6vKCHsrvHP8");
 
 let basePrice = 0;
 let total = basePrice;
-let selectedTime = "";
 let selectedAddons = [];
 let selectedServices = [];
 
@@ -33,18 +32,8 @@ function updateTotal() {
   document.getElementById("totalField").value = `$${total}`;
 }
 
-// ================= TIME SELECTION =================
-document.querySelectorAll(".time-slot").forEach(slot => {
-  slot.addEventListener("click", () => {
-    document.querySelectorAll(".time-slot").forEach(s =>
-      s.classList.remove("selected")
-    );
-
-    slot.classList.add("selected");
-    selectedTime = slot.innerText;
-    document.getElementById("timeField").value = selectedTime;
-  });
-});
+// ================= TIME SELECTION 
+ 
 
 // ================= FORM SUBMIT =================
 document
@@ -52,10 +41,7 @@ document
   .addEventListener("submit", function (e) {
     e.preventDefault();
 
-    if (!selectedTime) {
-      alert("Please select a time");
-      return;
-    }
+   
 
     emailjs
       .sendForm(
@@ -69,7 +55,7 @@ document
         this.reset();
         total = basePrice;
         selectedServices = [];
-        selectedTime = "";
+ 
 
         document.getElementById("total").innerText = "$0";
       })

@@ -386,20 +386,7 @@ nav ul li a {
 .booking-card label:hover {
   background: #f6a5c0;
 }
-.time-slot {
-  width: 100%;
-  padding: 12px;
-  margin-top: 8px;
-  border-radius: 10px;
-  border: 1px solid #f2c9d6;
-  background: #fbe4ea;
-  cursor: pointer;
-}
-
-.time-slot.selected {
-  background: #f6a5c0;
-  border-color: #f6a5c0;
-}
+ 
 
 .inline {
   display: flex;
