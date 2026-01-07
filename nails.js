@@ -64,3 +64,12 @@ document
         alert("Email failed. Check console.");
       });
   });
+ 
+  document.addEventListener("DOMContentLoaded", () => {
+    const video = document.querySelector(".hero-video");
+    if (video) {
+      video.muted = true;
+      video.play().catch(() => {});
+    }
+  });
+ 
