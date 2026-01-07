@@ -19,6 +19,15 @@
 
   <!-- HERO SECTION -->
   <header class="hero" id="Home">
+  <!-- Background Video -->
+  <video class="hero-video" autoplay muted loop playsinline>
+    <source src="Images/nailsvideo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Overlay -->
+  <div class="hero-overlay"></div>
+    <!--content-->
     <nav>
       <h2 class="logo-text">The Pampered Route</h2>
       <button class="menu-btn">☰</button>
@@ -26,7 +35,7 @@
       <ul>
         <li><a href="#Home">Home</a></li>
         <li><a href="#About">About</a></li>
-        <li><a href="#Services">Services</a></li>
+       <!-- <li><a href="#Services">Services</a></li>-->
         <li><a href="#Policies">Policies</a></li>
         <li><a href="#Contact">Book</a></li>
       </ul>
@@ -52,7 +61,7 @@
     </p>
   </section>
 
-  <!-- SERVICES -->
+  <!-- SERVICES 
   <section id="Services" class="section">
     <h2>Services</h2>
     <div class="services-grid">
@@ -64,7 +73,7 @@
       <div class="before-card">Repairs</div>
     </div>
   </section>
-
+-->
   <!-- HOURS -->
   <section class="section light hours">
     <h2>Hours</h2>
@@ -112,11 +121,20 @@
   <!-- POLICIES -->
   <section id="Policies" class="section policies">
     <h2>Booking Policies</h2>
+    <div class="before-card">
+  <strong>‼️Travel Appointment Policy‼️</strong>
+  <p style="margin-top:10px;">
+    Clients booking travel services are required to provide the full service
+    address in advance. Addresses must be submitted at least 24 hours prior
+    to the scheduled appointment. Appointments without a confirmed address
+    are subject to cancellation.
+  </p>
+</div>
     <div class="policies-grid">
-      <div class="before-card">Deposit Required</div>
-      <div class="before-card">No Extra Guests</div>
-      <div class="before-card">10-Min Late Grace Period</div>
-      <div class="before-card">24-Hour Cancellation</div>
+      <div class="before-card">Deposit Required❗</div>
+      <div class="before-card">No Extra Guests❗</div>
+      <div class="before-card">10-Min Late Grace Period❗</div>
+      <div class="before-card">24-Hour Cancellation❗</div>
     </div>
   </section>
 
@@ -177,7 +195,7 @@
 
           <input type="text" name="name" placeholder="Full Name" required>
           <input type="email" name="email" placeholder="Email" required>
-
+<!--
           <div class="allergy-group">
   <p class="allergy-label">Allergic to any nail products?</p>
 
@@ -191,7 +209,7 @@
     No
   </label>
 </div>
-
+-->
 
           <label class="inline">
             <input type="checkbox" required>
@@ -212,7 +230,7 @@
     </div>
   </section>
 <section id="Contact" class="section light contact">
-  <h2>Book Your Appointment</h2>
+  <h2>⬇️ Book Your Appointment</h2>
 
   <iframe
     src="https://book.squareup.com/appointments/ah6slv6ud8bibc/location/L9R4ENPC0SZ6E/services"

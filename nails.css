@@ -48,17 +48,44 @@ nav ul li a {
 
 /* ================= HERO ================= */
 .hero {
+  position: relative;
   min-height: 100vh;
   display: flex;
   align-items: center;
   padding-left: 80px;
+  overflow: hidden;
+}
+
+/* Video background */
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -2;
+}
+
+/* Pink overlay */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+  /*min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-left: 80px;}
   background:
     linear-gradient(
       rgba(255, 192, 203, 0.45),
       rgba(255, 192, 203, 0.45)
     ),
     url("Images/pfp-BackgroundRe.jpg") center / cover no-repeat;
-}
+*/
+
 
 .content {
   margin-bottom: 15px;
